@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Order your customized pizza">
+    <meta name="keywords" content="pizza, order, online, food, form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Pizza Co.</div>
+        <nav class="navigation">
+            <ul class="menu">
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="#" class="menu-link">About Us</a></li>
+                <li><a href="#" class="menu-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <form action="#" method="post" class="pizza-form">
+            <h2 class="form-title">Customize Your Pizza</h2>
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="pizza-type" class="form-label">Pizza Type:</label>
+                <select id="pizza-type" name="pizza-type" class="form-select">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="canadian">Canadian</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Pizza Size:</label>
+                <div class="form-radio-group">
+                    <input type="radio" id="small" name="pizza-size" value="small" checked class="form-radio">
+                    <label for="small" class="form-radio-label">Small</label>
+                    <input type="radio" id="medium" name="pizza-size" value="medium" class="form-radio">
+                    <label for="medium" class="form-radio-label">Medium</label>
+                    <input type="radio" id="large" name="pizza-size" value="large" class="form-radio">
+                    <label for="large" class="form-radio-label">Large</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="toppings" class="form-label">Toppings:</label>
+                <div class="form-checkbox-group">
+                    <input type="checkbox" id="pepperoni" name="topping" value="pepperoni" class="form-checkbox">
+                    <label for="pepperoni" class="form-checkbox-label">Pepperoni</label>
+                    <input type="checkbox" id="mushrooms" name="topping" value="mushrooms" class="form-checkbox">
+                    <label for="mushrooms" class="form-checkbox-label">Mushrooms</label>
+                    <input type="checkbox" id="onions" name="topping" value="onions" class="form-checkbox">
+                    <label for="onions" class="form-checkbox-label">Onions</label>
+                </div>
+            </div>
+            <button type="submit" class="form-button">Place Order</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
